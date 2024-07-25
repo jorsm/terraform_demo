@@ -1,2 +1,2 @@
-project_id = "terraform-demo-257"
-bucket_name = "terraform-demo-257-bucket"
+project_id = "your-project-id"
+bucket_name = "your-bucket-name"
