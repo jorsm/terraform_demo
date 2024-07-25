@@ -1,16 +1,14 @@
 # Demo Steps
-## Cloud Shell Editor e clonare il Repository
-
+## Cloud Shell Editor e Clone del Repository
 1. tramite [questo link](https://shell.cloud.google.com/?pli=1&show=ide&environment_deployment=ide) e' possibile acceder a cloud shell editor
+2. Configurare lo username e l'email per git
+  ```bash
+  git config --global user.name "your-github-user"
+  ```
 
-2.Configurare lo username e l'email per git
-```bash
-git config --global user.name "your-github-user"
-```
-
-```bash
-git config --global user.email "your-github-emaiil"
-```
+  ```bash
+  git config --global user.email "your-github-emaiil"
+  ```
 3. Premere (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>) oppure dalle icone di sinistra selezionare *Source Control* oppure premere  (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) e scrrivere nel box che compare *Source Control* e selezionare *Source Control: Focus on Source Control View*
 
 4. da qui e' possibiile accedere a github clickando su *Clone Repository* ed inserendo l'url del repository da clonare, nei box a seguire viene dato un **codice da inserire nella pagina di github per l'autenticazione**
@@ -32,7 +30,7 @@ terraform init
 
 ## Creazione del Bucket per la Cloud Function e per lo Statefile
 
-1. Creare il bucket lanciando
+1. Cambiare il projeect ID e il Bucket name nel file  [terraform.tfvars](terraform/terraform.tf) e poi creare il bucket lanciando
 ```bash
 terraform apply
 ```
